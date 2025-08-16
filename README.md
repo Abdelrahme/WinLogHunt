@@ -9,10 +9,8 @@ Useful for incident response, threat hunting, and forensic analysis.
 
 - **Live Log Scanning**: Enumerates all event log channels and searches their entries.
 - **Offline Analysis**: Recursively scans directories for `.evtx` files and searches them.
-
 - **Case-Insensitive Search**: Matches regardless of case.
 - **Flexible Search Term**: Search any substring or use regex patterns with the `--regex` option.
-
 - **Multiple Formats**: Supports `xml`, `txt`, `csv`, and `json`.
 s.
 
