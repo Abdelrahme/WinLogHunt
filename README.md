@@ -48,40 +48,6 @@ compile.bat
 
 ## Usage
 
-**Live logs:**
-```cmd
-WinLogHunt.exe -i <keyword> --live [-o <outputfile>] [-f <format>] [--regex]
-```
-
-**Offline `.evtx` directory scan:**
-```cmd
-WinLogHunt.exe -i <keyword> -d <directory> [-o <outputfile>] [-f <format>] [--regex]
-```
-
-**Help:**
-```cmd
-WinLogHunt.exe -h
-```
-
----
-
-## Options
-- `-h` : Show this help message
-- `-i <keyword>` : Search keyword (process name, service name, command, etc.) **[REQUIRED]**
-- `-d <directory>` : Scan `.evtx` files from the specified directory
-
-- `-o <outputfile>` : Output file (default: `results.xml`)
-- `-f <format>` : Output format: `xml`, `txt`, `csv`, `json` (default: `xml`)
-- `--regex` : Treat the keyword as a regex pattern
-- `--live` : Scan live Windows event logs
-
-
-> **Note:** Either `--live` or `-d <directory>` must be specified. `-i <keyword>` is required.
-
----
-
-## Examples
-
 **Search live logs for `services.exe`:**
 ```cmd
 WinLogHunt.exe -i services.exe --live
